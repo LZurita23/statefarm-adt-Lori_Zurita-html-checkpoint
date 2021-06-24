@@ -12,6 +12,7 @@ font-family: "Times New Roman", serif;
 .comment {
     width: 545px;
     height: 300px;
+    vertical-align: text-top;
 }
 </style>
 </head>
@@ -29,34 +30,25 @@ font-family: "Times New Roman", serif;
   
   <br>
   <label for="comment">Comment:</label><br>
-  <input type="text" class="comment"><br>
-  <button type="button" onchange=submitFunction() disabled>Submit</button>
+  <textarea name="comments" rows="10" cols="100"></textarea>
+  <br>
+  <br>
+  <input type="checkbox" name="real" value="Submit"> Are you a real person? Like for real real?<br>
+  <br>
+  <button type="button" onclick="submitFunction()">Submit</button>
 </form> 
 <br>
-    <input type="checkbox" name="real" value="Accept" onclick="EnableSubmit()"> Are you a real person? Like for real real?
+   
 
 
 <script>
 function submitFunction() {
    //alert("Submission Successful. Thank you!");
    var myWindow = window.open("", "_self");
-    myWindow.document.write("<p>Submission Successful. Thank you!</p><br><button onClick=open'href=../../index.html'> Back to Homepage</button>");
+    myWindow.document.write("<p>Submission Successful. Thank you!</p>");
 }
-EnableSubmit = function(val){
-    var sbmt = document.getElementById("Accept");
-
-    if (val.checked == true)
-    {
-        sbmt.disabled = false;
-    }
-    else
-    {
-        sbmt.disabled = true;
-    }
-}  
-
-
 </script>
+
 
 
 </body>
