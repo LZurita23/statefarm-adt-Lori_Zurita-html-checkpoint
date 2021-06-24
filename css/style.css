@@ -1,0 +1,47 @@
+        
+
+h2 {
+    text-align: center;
+    color: #926AA6;  
+    line-height: 100px;
+    margin: 0;
+}
+
+
+
+.quote {
+    font-size: 100%;
+    font-style: italic;
+}
+         
+
+.output {
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+h4 {
+    margin-bottom: 5px;
+    font-weight: bold;
+    float: left;
+} 
+
+hr {
+    border-top: 5px solid rgba(49, 48, 48);
+}
+dt {
+    font-weight: bold;
+}
+
+dl, dd {
+    font-size: 1rem;
+}
+
+dd {
+    margin-bottom: 1em;
+}
+
+
+
+
+
+

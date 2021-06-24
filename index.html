@@ -1,52 +1,155 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="style.css"/>        
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="/css/style.css"/>        
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
         
         <title> Lori Z's SDI Page </title>
-       
 
+        <style>
+            section {
+                display: flex;
+                flex-wrap: wrap;          
+            }
+            article {
+                display: flex; 
+                padding-bottom: 20px;
+                padding-right: 25px;
+                padding-left: 25px;
+                margin-top: 5px;
+                margin-left: 20px;
+                margin-right: 20px;
+                flex: 4 25px ;
+                background: rgb(233, 137, 126, 0.5); 
+                border-radius: 12px;          
+                flex-flow: column; 
+            }
+            
+            img {
+                width: 100px;
+                height: 100px;
+                display: block;
+                margin-top: 10px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            nav {
+                margin: auto;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            .buttons1 { 
+                margin: 10px;                           
+                font-family: serif;
+                font-size: 20px;
+                font-style: bold;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                text-decoration:none;          
+                background-size: 250%;
+                color: #FFF;
+                box-shadow: 0 0 20px #eee;
+                border: none;
+                border-radius: 12px;
+                width: 150px;
+                box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+                transition: all 0.3s cubic-bezier(0);
+                cursor: pointer;
+            }
+
+            .buttons { 
+                margin: 10px;                           
+                font-family: serif;
+                font-size: 20px;
+                font-style: bold;
+                padding-top: 15px;
+                padding-right: 25px;
+                padding-left: 25px;
+                padding-bottom: 15px;
+                text-decoration:none;          
+                background-size: 200%;
+                color: #FFF;
+                box-shadow: 0 0 20px #eee;
+                border: none;
+                border-radius: 12px;
+                width: 160px;
+                box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+                transition: all 0.3s cubic-bezier(0);
+                cursor: pointer;               
+                
+            
+            }
+
+            .buttons {
+                background-image: linear-gradient(to bottom, rgb(233, 137, 126, 0.5), #926AA6)            
+            }
+            .buttons:hover { 
+                background-color:rgb(233, 137, 126, 0.5); background-image:none; color: #926AA6;
+            }
+            .buttons1 {
+                background-image: linear-gradient(to bottom,rgb(233, 137, 126, 0.5), #926AA6)            
+            }
+            .buttons1:hover { 
+                background-color:rgb(233, 137, 126, 0.5); background-image:none; color: #926AA6;
+            }
+
+            h1 {
+                font-family: "Sofia", sans-serif;
+                text-align: center;
+                font-size: 50px;
+                color: rgb(209, 122, 129);
+                line-height: 100px;
+                margin: 0;
+            }
+
+            footer {
+                margin: 20px;
+                bottom: 10px;
+                font-family: serif;
+                font-size: 100%;
+                text-align: center;             
+            }
+        </style>
+    </head>
+
+
+    <body> 
         <nav>
             <button type=button onclick=url(index.html) target="_blank" class="buttons1">HOME</button>  
             <button type=button onclick=goToPage() target="_blank" class="buttons">ABOUT ME</button>
             <button type= button class="buttons">SURVEY</button>
         </nav>
 
-    </head>
-
-
-    <body> 
         <h1>Girls Can't Do What?</h1>
                     
-        <section>
-            <article>
+        <section class="girl-section">
+            <article class="girl-article">
                 <img src="img/computer-light.png"  alt="Girl on a laptop">
                 <h2> First Computer Programmer </h2>                
                 <a href="https://www.thoughtco.com/ada-lovelace-biography-5113321#:~:text=Ada%20Lovelace%20%28born%20Augusta%20Ada%20Byron%3B%20December%2010%2C,computing%20machine%20built%20by%20Charles%20Babbage%20in%201821."> Biography of Ada Lovelace, First Computer Programmer </a>
-                </div>
             </article>
             
 
-            <article>
+            <article class="girl-article">
                 <img src="img/construction-girl.png" alt="Girl in construction">
                 <h2> History of Women in Construction </h2>               
-                <a href="https://www.familyhandyman.com/article/women-in-construction-history/"> History of Women in Construction </a>  
-                </div>           
-                
+                <a href="https://www.familyhandyman.com/article/women-in-construction-history/"> History of Women in Construction </a>     
             </article>
 
-            <article>
+            <article class="girl-article">
                 <img src="img/girls_cant_what.png" alt="Girl in auto repair">
                 <h2> Shop Girl </h2>                
                 <a href="https://www.motor1.com/features/178136/women-mechanics/"> Shop Girl: Getting Under The Hood With Women Who Wrench</a>
             </article>
-            <article>
+
+            <article class="girl-article">
                 <h1>?</h1>
                 <h2>Why This Topic </h2>  
                 <p><a href="article.html">Why This Topic</a></p>
-
-
             </article>
 
         </section>
