@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Lori Z's Website Survey</title>
+<style>
+body {
+font-size: 20px;
+font-family: "Times New Roman", serif;
+}
+
+.comment {
+    width: 545px;
+    height: 300px;
+}
+</style>
+</head>
+<body>
+<h2><b>Website Survey</b></h2>
+
+<p>What did you think of my website?</p>
+
+<p> Please submit your name and contact information so that I may get back to you.</p>
+<span action="/action_page.php">
+  <span><label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname">
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"></span><br>
+  
+  <br>
+  <label for="comment">Comment:</label><br>
+  <input type="text" class="comment"><br>
+  <button type="button" onchange=submitFunction() disabled>Submit</button>
+</form> 
+<br>
+    <input type="checkbox" name="real" value="Accept" onclick="EnableSubmit()"> Are you a real person? Like for real real?
+
+
+<script>
+function submitFunction() {
+   //alert("Submission Successful. Thank you!");
+   var myWindow = window.open("", "_self");
+    myWindow.document.write("<p>Submission Successful. Thank you!</p><br><button onClick=open'href=../../index.html'> Back to Homepage</button>");
+}
+EnableSubmit = function(val){
+    var sbmt = document.getElementById("Accept");
+
+    if (val.checked == true)
+    {
+        sbmt.disabled = false;
+    }
+    else
+    {
+        sbmt.disabled = true;
+    }
+}  
+
+
+</script>
+
+
+</body>
+</html>
